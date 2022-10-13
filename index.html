@@ -4,11 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coder itce</title>
+    <meta name="keywords" content="consultoria y seguridad informatica, desarrollo web">
+    <meta name="description" content="Todos los servicios informáticos que necesitás. Soporte técnico, seguridad informatica, recupero de datos, consultoría, venta de hardware.">
+    <meta name="author" content="Martin Otero">
+    <meta name="copyright" content="ITCE:SRL">
+    <title>Inicio-ITCE</title>
     <link rel="apple-touch-icon" sizes="180x180" href="./Assets/img/favicon_io/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./Assets/img/favicon_io/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./Assets/img/favicon_io/favicon-16x16.png">
-    <link rel="stylesheet" href="./css/index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
         <header class="header">           
@@ -20,7 +25,7 @@
                     <div class="nav-menu">
                         <input type="checkbox" id="check">    
                         <label for="check" class="checkbtn">
-                        <i class="menu-icon"><img src="./Assets/img/hamburgesa.png" alt=""></i>
+                        <i class="menu-icon"><img src="./Assets/img/hamburgesa.png" alt="menu-hamburguesa"></i>
                         </label>
                         <ul class="nav-links">
                             <li><a href="./Pages/Servicios.html">Servicios</a></li>
@@ -33,29 +38,47 @@
          </header>
 
          <main>
-             <section id="hero">
-                <h1>Administracion de redes <br>y servidores</h1>  
-                <form action="./Pages/Servicios.html">
-                    <button>Mas info</button>        
-                </form>
-             </section>
-         </main>
-         <aside>
-             <section class="add">
-                    <h5>Ahora ITCE suma servicios como internet/wifi  por fibra optica</h5>
-             </section>
-
-             <section id="sobre-nosotros">
-                <div class="container">
-                    <div class="img-container"></div>
-                    <div class="texto">
-        
-                        <h2> Sobre Nosotros</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit veritatis a autem sed dignissimos commodi, voluptas incidunt voluptatibus cum, quia neque nulla consequatur laborum accusamus, perspiciatis odio nemo minus vel!</p>
-                    </div>
+          <section>
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="./Assets/img/servidores.jpg" class="d-block w-100" alt="baner1">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./Assets/img/carrusel2.jpg" class="d-block w-100" alt="baner2">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./Assets/img/carrusel3.jpg" class="d-block w-100" alt="baner3">
+                  </div>
                 </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+          </section>
+          <aside>
+            <section class="add">
+              <h5>Ahora <strong>ITCE</strong> suma servicios como internet/wifi  por fibra optica</h5>
+            </section>
+            
+            <section id="sobre-nosotros">
+              <div class="container-sn">
+                <article id="id-sn">
+                  <div class="img-container"></div>
+                  <div class="texto">
+                    <h2> Sobre Nosotros</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit veritatis a autem sed dignissimos commodi, voluptas incidunt voluptatibus cum, quia neque nulla consequatur laborum accusamus, perspiciatis odio nemo minus vel!</p>
+                  </div>
+                </article>
+              </div>
             </section>         
-         </aside>
+          </aside>
+        </main>
      
 
 
@@ -102,13 +125,10 @@
             </div>
         </footer>
         
-        
-       
-             
-            
-        
-        
 
 
+
+ 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>       
 </body>
 </html>

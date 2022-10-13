@@ -1,0 +1,142 @@
+#hero-cert{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 80vh;
+    color: white;
+    background-image: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.1),
+    rgba(0, 0, 0, 0.1)
+    )
+    ,url("../Assets/img/alianzas\ 1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.card-1{
+    width: 100%;
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+    justify-content: center;
+   padding-top: 70px;
+   padding-bottom: 70px;
+    background-color: rgb(139, 138, 138);
+}
+.card__perfil{
+    width: 250px;
+    padding: 20px;
+    box-shadow: 1px 1px 5px rgb(201, 201, 201);
+    border: solid rgba(3, 133, 255, 0) 2px;
+    border-radius: 10px;
+    background-color: white;
+}
+.card__perfil:hover{
+    border: solid rgb(255, 3, 3) 2px;
+}
+.card__perfil:hover img{
+    transform: rotate(0);
+}
+.img-ali{
+    width: 140px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px rgb(216, 216, 216);
+    transform: rotate(-30deg);
+    transition: all .3s;
+}
+.card__nombre{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+hr{
+    width: 100%;
+    height: 4px;
+    background: rgb(223, 221, 221);
+    margin: 20px 5px;
+}
+.card__button{
+    text-align: center;
+}
+.enlace{
+    background: rgb(255, 0, 0);
+    padding: 8px 20px;
+    color: white;
+    text-decoration: none;
+}
+
+
+
+
+
+#hero-ali{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 80vh;
+    color: white;
+    background-image: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.1),
+    rgba(0, 0, 0, 0.1)
+    )
+    ,url("../Assets/img/certificaciones.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#hero.ali h2{
+    font-size: 3.5em;
+}
+
+.imagen-cert{
+    width: 100px;
+    height: 100px;
+}
+
+.contenedor-cert{
+    
+    /* Grid */
+    display: grid;
+  grid-template-columns: repeat(auto-fit, 20rem);
+  justify-content: center;
+    
+}
+
+.titulo {
+    font-size: 24px;
+    padding: 20px 0;
+}
+
+
+
+.card {
+    overflow: hidden;
+    box-shadow: 0px 2px 8px 0px var(--clr-gray-light);
+    background-color: white;
+    text-align: center;
+    border-radius: 1rem;
+    position: relative;
+    margin: 0.5rem;
+
+}
+
+.card .textos {
+    height: 100%;
+    
+    /* Flebox */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+
+}

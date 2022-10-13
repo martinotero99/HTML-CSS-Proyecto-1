@@ -1,0 +1,89 @@
+.header{
+    @include propiedades-flex (row,space-between,center)
+    background-color: black;
+    height: 90px;
+    padding: 2rem 2rem;
+}
+.header .logo{
+    cursor: pointer;
+}
+
+.header .logo img{
+   height: 70px;
+   width: 200px;
+   transition: all 0.3s;
+}
+
+.header .logo img:hover{
+    transform: scale(1.2);
+}
+.nav-menu ul{
+    display: flex;
+    align-items: center;
+}
+.nav-menu li{
+    margin-right: 1rem;
+    
+    
+}
+
+header .nav-links li:hover{
+    transform: scale(1.1);
+}
+
+header .nav-links li a{
+    font-size: 700;
+    color: white;
+    text-decoration: none;
+}
+
+header .nav-links li a:hover{
+    color:rgba(255, 0, 0, 0.856) ;
+}
+.menu-icon img{
+    width: 30px;
+    height: 30px;
+    border-radius: 2px;
+}
+
+.menu-icon, #check{
+    display: none;
+}
+
+
+@media (max-width:768px){
+    
+    .menu-icon{
+        display: block;
+        position: fixed;
+        top: 15px;
+        right: 20px;
+        cursor: pointer;
+    }
+    .nav-menu ul{
+        position: fixed;
+        top: 40px;
+        bottom: 0px;
+        background: rgba(119, 121, 14, 0.966);
+        width: 100%;
+        left: 0;
+        display: flex;
+        margin: 9px;
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
+        clip-path: circle(0 at center);
+        transition: clip-path 1s ease-in-out;
+    }
+    .nav-menu ul li{
+        padding: 2rem;
+        display: flex;
+        justify-content: center;
+        margin: 0;
+    }
+    
+    #check:checked ~ ul{
+        clip-path: circle(100% at center);
+        
+    }
+}
