@@ -40,7 +40,7 @@
   #mision .img-container {
     height: 500px;
     width: 500px;
-    margin-left: 200px;
+    margin-right: 200px;
     border-radius: 20px; }
   
   #vision {
@@ -81,6 +81,14 @@
       display: flex;
       flex-direction: column;
       justify-content: center; }
+      #mision .text-container {
+        width: 50%;
+        max-width: 600px;
+        text-align: initial;
+        padding-left: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center; }
     #quienes-somos .img-container {
       background-image: url("../Assets/img/quienes somos.jpg");
       background-size: cover;
